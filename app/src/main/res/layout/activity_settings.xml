@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_gray"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.joneill.snowmusic.views.ThemedToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/settings_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/primary_theme_color"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        android:elevation="4dp"
+        app:contentInsetLeft="72dp"
+        app:contentInsetStart="72dp" />
+
+    <FrameLayout
+        android:id="@+id/settings_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_toolbar"/>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tag_item"
+    android:layout_width="fill_parent"
+    android:layout_height="64dp"
+    android:background="?attr/ripple_background_rect"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:foreground="?attr/ripple_background_rect">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/item_holder">
+
+            <TextView
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:id="@+id/tag_list_item_number"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/primary_text_color"
+                android:textSize="14dp"
+                />
+
+            <TextView
+                android:id="@+id/tag_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tag_list_item_number"
+                android:layout_marginLeft="16dp"
+                android:text="test"
+                android:textColor="@color/primary_text_color"
+                android:textSize="18dp" />
+
+            <!-- Song Artist-->
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/backup_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="86dp"
+            android:layout_alignBaseline="@+id/item_holder"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="16dp"
+            android:background="@color/divider_light_gray"
+            android:visibility="visible" />
+    </RelativeLayout>
+</RelativeLayout>

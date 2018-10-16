@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/ds_spp_bg">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="250dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_weight="1.2">
+
+                <TextView
+                    android:id="@+id/ds_tv_mainSongTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="sans-serif"
+                    android:singleLine="true"
+                    android:text="Song Title"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ds_tv_mainArtistTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ds_tv_mainSongTitle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:singleLine="true"
+                    android:text="Song Artist"
+                    android:textColor="@color/white"
+                    android:textSize="19sp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_songPanelControls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="52dp">
+
+                        <SeekBar
+                            android:id="@+id/ds_sb_MusicPlayer"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false" />
+
+                        <TextView
+                            android:id="@+id/ds_tv_current_song_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@id/ds_sb_MusicPlayer"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="6dp"
+                            android:text="0:01"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/ds_tv_total_song_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/ds_sb_MusicPlayer"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="6dp"
+                            android:text="3:14"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="84dp"
+                        android:layout_above="@+id/empty_view">
+
+                        <ImageButton
+                            android:id="@+id/ds_btn_PlayMain"
+                            android:layout_width="74dp"
+                            android:layout_height="74dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="0dp"
+                            android:background="?attr/ripple_background_circle"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pause_ring_light" />
+
+                        <ImageView
+                            android:id="@+id/ds_iv_PlayMain"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginTop="17dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pause_light" />
+
+                        <ImageButton
+                            android:id="@+id/ds_btn_NextMain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="34dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_toRightOf="@id/ds_btn_PlayMain"
+                            android:background="?attr/ripple_background_rect"
+                            android:src="@drawable/next_light" />
+
+                        <ImageButton
+                            android:id="@+id/ds_btn_PrevMain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_marginRight="34dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_toLeftOf="@id/ds_btn_PlayMain"
+                            android:background="?attr/ripple_background_rect"
+                            android:src="@drawable/prev_light" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/empty_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="16dip"
+                        android:layout_alignParentBottom="true"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/settings_toolbar"
+        android:background="@color/background_gray"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:id="@+id/settings_bgcolors_scrollview_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fsbgcolor_album"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:elevation="4dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/colors"
+                        android:textColor="?attr/primary_theme_color"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <LinearLayout xmlns:card="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/bg_spp_color_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="?attr/ripple_background_rect"
+                        android:clickable="true">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true">
+
+                            <TextView
+                                android:id="@+id/tv_bg_color_spp_item"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:text="@string/si_spp_c"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/bg_color_spp_preview"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/outline_black"
+                            android:padding="1dp"
+                            android:src="@drawable/color_preview" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/secondary_text_color" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout xmlns:card="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/bg_spb_color_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="?attr/ripple_background_rect"
+                        android:clickable="true">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true">
+
+                            <TextView
+                                android:id="@+id/tv_bg_color_spb_item"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:text="@string/si_sip_c"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/bg_color_spb_preview"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/outline_black"
+                            android:padding="1dp"
+                            android:src="@drawable/color_preview" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/secondary_text_color" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout xmlns:card="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/si_seekbar_c_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="?attr/ripple_background_rect"
+                        android:clickable="true">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true">
+
+                            <TextView
+                                android:id="@+id/tv_si_seekbar_c"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:text="@string/si_seekbar_c"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/si_seekbar_c_preview"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/outline_black"
+                            android:padding="1dp"
+                            android:src="@drawable/color_preview" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/secondary_text_color" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout xmlns:card="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/bg_btnplay_color_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="?attr/ripple_background_rect"
+                        android:clickable="true">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true">
+
+                            <TextView
+                                android:id="@+id/tv_bg_color_btnplay_item"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:text="@string/si_col_btnplay"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/bg_color_btnplay_preview"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/outline_black"
+                            android:padding="1dp"
+                            android:src="@drawable/color_preview" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/secondary_text_color" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout xmlns:card="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/bg_btnpause_color_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="?attr/ripple_background_rect"
+                        android:clickable="true">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true">
+
+                            <TextView
+                                android:id="@+id/tv_bg_color_btnpause_item"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:text="@string/si_col_btnpause"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/bg_color_btnpause_preview"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/outline_black"
+                            android:padding="1dp"
+                            android:src="@drawable/color_preview" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/secondary_text_color" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout xmlns:card="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/bg_btnprev_color_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="?attr/ripple_background_rect"
+                        android:clickable="true">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true">
+
+                            <TextView
+                                android:id="@+id/tv_bg_color_btnprev_item"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:text="@string/si_col_btnprev"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/bg_color_btnprev_preview"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/outline_black"
+                            android:padding="1dp"
+                            android:src="@drawable/color_preview" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/secondary_text_color" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout xmlns:card="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/bg_btnnext_color_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="?attr/ripple_background_rect"
+                        android:clickable="true">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true">
+
+                            <TextView
+                                android:id="@+id/tv_bg_color_btnnext_item"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:text="@string/si_col_btnnext"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/bg_color_btnnext_preview"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/outline_black"
+                            android:padding="1dp"
+                            android:src="@drawable/color_preview" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/secondary_text_color" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

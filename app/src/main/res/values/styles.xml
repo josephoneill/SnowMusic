@@ -1,0 +1,40 @@
+<resources>
+
+    <attr name="ripple_background_rect"
+        format="reference" />
+
+    <attr name="ripple_background_circle"
+        format="reference" />
+
+    <attr name="ripple_background_color"
+        format="reference|color" />
+
+    <attr name="primary_theme_color"
+        format="reference|color" />
+
+    <attr name="secondary_theme_color"
+        format="reference|color" />
+
+    <attr name="main_song_text_color"
+        format="reference|color" />
+
+    <attr name="main_artist_text_color"
+        format="reference|color" />
+
+    <attr name="overflow_menu"
+        format="reference" />
+
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_marginLeft">8dp</item>
+    </style>
+</resources>

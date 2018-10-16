@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/music_notif"
+    android:background="@color/notification_gray">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:adjustViewBounds="true"
+        android:id="@+id/notif_album_art"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tiger"
+        android:layout_alignParentLeft="true" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/notif_main_view"
+        android:layout_toRightOf="@id/notif_album_art"
+        android:layout_alignBottom="@+id/notif_album_art">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:id="@+id/notif_song_title"
+            android:textSize="16sp"
+            android:text="TEST"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:id="@+id/notif_artist_title"
+            android:textSize="12sp"
+            android:text="TEST"
+            android:textColor="@color/white"
+            android:layout_below="@id/notif_song_title"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:alpha="0.7"
+            />
+
+        <ImageButton
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:id="@+id/btn_notif_play"
+            android:src="@drawable/play_light"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_alignTop="@+id/btn_notif_prev"
+            android:layout_centerHorizontal="true" />
+
+
+        <ImageButton
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:id="@+id/btn_notif_prev"
+            android:src="@drawable/prev_light"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_toLeftOf="@id/btn_notif_play"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" />
+
+        <ImageButton
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:id="@+id/btn_notif_next"
+            android:src="@drawable/next_light"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_toRightOf="@id/btn_notif_play"
+            android:padding="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/btn_notif_play" />
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/notif_divider"
+            android:layout_above="@id/btn_notif_play"
+            android:background="@android:color/darker_gray"></RelativeLayout>-->
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:id="@+id/notif_progress_bar"
+            android:layout_height="3dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_above="@id/btn_notif_play"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/song_item"
+    android:background="?attr/ripple_background_rect"
+    android:fitsSystemWindows="true"
+    >
+
+    <!-- Album Art Image -->
+    <ImageView
+        android:id="@+id/item_album_art"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:contentDescription="icon"
+        android:src="@drawable/ic_launcher"
+        />
+
+    <!-- Song Title -->
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="175dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/item_album_art"
+        android:layout_alignBaseline="@+id/item_album_art"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp" />
+
+    <!-- Song Artist-->
+    <TextView
+        android:id="@+id/item_artist"
+        android:layout_width="175dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/item_album_art"
+        android:layout_alignBaseline="@+id/item_album_art"
+        android:layout_below="@+id/item_title"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/black"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/item_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/secondary_text_color"
+        android:textSize="16dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/song_frag_overflow_menu"
+        android:visibility="invisible"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/backup_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="86dp"
+        android:layout_alignBaseline="@+id/item_album_art"
+        android:visibility="invisible"
+        android:textSize="16dp" />
+
+    <ImageButton
+        android:id="@+id/song_frag_overflow_menu"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/ripple_background_circle"
+        android:src="?attr/overflow_menu"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/divider_light_gray"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

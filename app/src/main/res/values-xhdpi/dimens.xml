@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="grid_card_width">204dp</dimen>
+    <dimen name="grid_image_height">190dp</dimen>
+    <dimen name="grid_card_double_height">258dp</dimen>
+    <dimen name="grid_card_single_height">238dp</dimen>
+</resources>

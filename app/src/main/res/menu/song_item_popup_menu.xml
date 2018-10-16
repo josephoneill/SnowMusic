@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/song_menu_i1"
+        android:title="Play Song"/>
+
+    <item
+        android:id="@+id/song_menu_i2"
+        android:title="Add to playlist"/>
+
+    <item
+        android:id="@+id/song_menu_i3"
+        android:title="Edit Song Info"/>
+
+    <item
+        android:id="@+id/song_menu_i4"
+        android:title="Download Album Art"/>
+
+    <item
+        android:id="@+id/song_menu_i5"
+        android:title="Edit Custom Tags"/>
+
+</menu>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="30dp"
+    android:paddingTop="12dp">
+    <RadioButton
+        android:id="@+id/rbDialogCTPalette"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/d_ct_palette" />
+
+    <RadioButton
+        android:id="@+id/rbDialogCTCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rbDialogCTPalette"
+        android:layout_alignStart="@+id/rbDialogCTPalette"
+        android:layout_below="@+id/rbDialogCTPalette"
+        android:text="@string/d_ct_custom" />
+</RelativeLayout>

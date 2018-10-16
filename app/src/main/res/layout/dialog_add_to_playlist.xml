@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp" android:layout_height="265dp"
+    android:id="@+id/rl_atp_dialog"
+    android:background="@drawable/bg_bubble_popup">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/playlist_dialog_title"
+        android:text="@string/add_to_playlist" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvAddToPlaylist"
+        android:layout_below="@id/playlist_dialog_title"
+        android:layout_marginTop="18dp"
+        android:layout_width="284.5dp"
+        android:layout_height="190dp">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

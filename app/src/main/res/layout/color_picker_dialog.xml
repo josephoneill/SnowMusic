@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">w
+
+    <RelativeLayout
+        android:id="@+id/rl_HexColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/hex_TextInputLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_ColorHex"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="hex" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageButton
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/btnSetHex"
+            android:layout_toRightOf="@id/hex_TextInputLayout"
+            android:src="@drawable/abc_ic_ab_back_material"/>
+    </RelativeLayout>
+
+    <com.larswerkman.holocolorpicker.ColorPicker
+        android:id="@+id/colorPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_HexColor"
+        android:layout_centerHorizontal="true" />
+
+    <com.larswerkman.holocolorpicker.SVBar
+        android:id="@+id/svBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/colorPicker"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnColorDialogDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/svBar"
+        android:layout_marginTop="16dp"
+        android:background="?attr/primary_theme_color"
+        android:text="@string/done"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnColorDialogDone"
+        android:layout_marginLeft="485dp"
+        android:layout_marginStart="485dp" />
+</RelativeLayout>

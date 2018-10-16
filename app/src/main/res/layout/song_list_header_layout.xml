@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="56dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/song_header_item"
+    android:background="?attr/ripple_background_rect"
+    android:fitsSystemWindows="true"
+    >
+
+    <!-- Header Image -->
+    <ImageView
+        android:id="@+id/item_song_header_image"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="icon"
+        android:src="@drawable/ic_launcher"
+        />
+
+    <!-- Song Header Title -->
+    <TextView
+        android:id="@+id/item_song_header_text"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_song_header_image"
+        android:layout_alignBaseline="@+id/item_song_header_image"
+        android:textColor="?attr/primary_theme_color"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerVertical="true"
+        android:text="@string/shuffle"
+        android:textSize="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/gray"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

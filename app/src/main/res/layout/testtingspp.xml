@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.joneill.snowmusic.views.SlidingPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dragView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_material_dark"
+    android:clickable="true"
+    android:focusable="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/panel_bar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/album_thumbnail"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:gravity="center_vertical|right" />
+
+
+        <TextView
+            android:id="@+id/tv_slidepanel_song_title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/album_thumbnail"
+            android:singleLine="true"
+            android:textColor="@color/primary_text_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_slidepanel_song_artist"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_slidepanel_song_title"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/album_thumbnail"
+            android:singleLine="true"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/btn_PlayPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/ripple_background_rect"
+            android:padding="25dp"
+            android:src="@drawable/play_dark" />
+
+        <ImageView
+            android:id="@+id/album_next_thumbnail"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="450dp"
+            android:gravity="center_vertical" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainSongPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp">
+
+        <com.joneill.snowmusic.views.ThemedToolbar
+            android:id="@+id/spp_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_marginTop="8dp"
+            android:background="#00000000"></com.joneill.snowmusic.views.ThemedToolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/spp_toolbar"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".8">
+
+                <com.joneill.snowmusic.views.SquareImageView
+                    android:id="@+id/album_art_panel_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/tiger"></com.joneill.snowmusic.views.SquareImageView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:layout_weight="1.2">
+
+                <TextView
+                    android:id="@+id/tv_mainSongTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="sans-serif"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_mainArtistTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_mainSongTitle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="19sp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_songPanelControls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp">
+
+                        <SeekBar
+                            android:id="@+id/sb_MusicPlayer"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_current_song_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@id/sb_MusicPlayer"
+                            android:layout_margin="5dp"
+                            android:layout_marginLeft="16dp"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tv_total_song_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/sb_MusicPlayer"
+                            android:layout_margin="5dp"
+                            android:layout_marginRight="16dp"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="84dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="24dp">
+
+                        <ImageButton
+                            android:id="@+id/btn_PlayMain"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:scaleType="centerCrop"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="0dp"
+                            android:background="?attr/ripple_background_rect"
+                            android:src="@drawable/play_light" />
+
+                        <ImageButton
+                            android:id="@+id/btn_NextMain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="34dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_toRightOf="@id/btn_PlayMain"
+                            android:background="?attr/ripple_background_rect"
+                            android:src="@drawable/next_light" />
+
+                        <ImageButton
+                            android:id="@+id/btn_PrevMain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_marginRight="34dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_toLeftOf="@id/btn_PlayMain"
+                            android:background="?attr/ripple_background_rect"
+                            android:src="@drawable/prev_light" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</com.joneill.snowmusic.views.SlidingPanelLayout>

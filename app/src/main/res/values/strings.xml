@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Snow Music</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_themes">Themes</string>
+    <string name="app_id">EDC30A4B</string>
+    <string name="done">Done</string>
+    <string name="shuffle">SHUFFLE</string>
+    <string name="save">Save</string>
+    <string name="create_playlist">Create New Playlist</string>
+    <string name="new_playlist">Playlist Name</string>
+    <string name="add_to_playlist">Add to Playlist</string>
+    <string name="close">Close</string>
+
+    <string name="download_album_art">Download Album Art</string>
+    <string name="download_aa_size">Album Art Size</string>
+    <string name="download_ex_aa">Skip downloading existing album art</string>
+    <string name="download">Download</string>
+
+    <string-array name="albumart_size_array">
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+        <item>extralarge</item>
+        <item>mega</item>
+    </string-array>
+
+    <string name="setting_interface">Interface</string>
+    <string name="setting_lookfeel">Look and Feel</string>
+    <string name="setting_functionality">Functionality</string>
+    <string name="setting_headset">Headset</string>
+    <string name="setting_notification">Notification</string>
+
+
+    <string name="si_ac_c">Album Cards Color</string>
+    <string name="si_ac_c_desc">Set the color of the album cards</string>
+
+    <string name="si_spp_c">Song Player Panel Color</string>
+    <string name="si_spp_c_desc">Set the color of the song player panel</string>
+
+    <string name="si_sip_c">Song Bar Color</string>
+    <string name="si_sip_c_desc">Set the color of the bottom song bar</string>
+
+    <string name="si_seekbar_c">SeekBar Color</string>
+    <string name="si_seekbar_c_desc">Set the color of the music player seekbar</string>
+
+    <string name="si_fragment_color">Fragment Colors</string>
+    <string name="si_fragment_color_desc">Set the colors of supported views per fragment</string>
+
+    <string name="si_background_color">Background Colors</string>
+    <string name="si_background_color_desc">Set the background color of supported views</string>
+
+    <string name="si_spp_color">Song Player Panel Colors</string>
+    <string name="si_spp_color_desc">Set the colors of song player panel</string>
+
+    <string name="si_toolbar_colors">Toolbar Colors</string>
+    <string name="si_toolbar_colors_desc">Set the colors of the toolbars</string>
+
+    <string name="si_lastfm_album">Fetch Album Art</string>
+    <string name="si_lastfm_album_desc">Downloads any available album art from last.fm</string>
+
+    <string name="d_ct_palette">Auto-Generate the color</string>
+    <string name="d_ct_custom">Select custom color</string>
+
+    <string name="songpanel_settings">Song Panel Settings</string>
+
+    <string name="sf_b_playonskip">Play Song on Skip</string>
+    <string name="sf_b_playonskip_desc">Automatically play song on skip</string>
+    <string name="sf_songpanelsettings">Song Panel Settings</string>
+    <string name="sf_songpanelsettings_desc">Controls the functionality of the song player panel</string>
+    <string name="sf_sps_expand">Click panel to expand</string>
+    <string name="sf_sps_close">Click panel to close</string>
+
+    <string name="sh_pauseondis">Pause On Disconnect</string>
+    <string name="sh_pauseondis_desc">Pauses the current song when headset is disconnected</string>
+    <string name="sh_resoncon">Resume On Connect</string>
+    <string name="sh_resoncon_desc">Resumes the current song when headset is connected</string>
+    <string name="sh_use_quick_pause">Use Quick Pause</string>
+    <string name="sh_use_quick_pause_desc">Speeds up headset pause time by bypassing input timeout</string>
+
+    <string name="sn_bg_color">Notification Background Color</string>
+    <string name="sn_bg_color_desc">Set the background color of the notification</string>
+    <string name="sn_show_progress">Show Progress</string>
+    <string name="sn_show_progress_desc">Shows song progress. Disable if experiencing lag</string>
+
+    <string name="editTitle">Title</string>
+    <string name="editAlbum">Album</string>
+    <string name="editArtist">Artist</string>
+    <string name="editGenre">Genre</string>
+
+    <string name="edit_song_info">Edit Song Info</string>
+    <string name="change_album_art">Change Album Art</string>
+    <string name="preview">preview</string>
+
+    <string name="si_general_settings">General Settings</string>
+    <string name="si_songpanel_colors">Song Panel Colors</string>
+
+    <string name="col_album_frag">Album Fragment Colors</string>
+    <string name="col_album_frag_desc">Customize the colors of the album fragment</string>
+    <string name="col_artist_frag">Artist Fragment Colors</string>
+    <string name="col_artist_frag_desc">Customize the colors of the artist fragment</string>
+    <string name="col_genre_frag">Genre Fragment Colors</string>
+    <string name="col_genre_frag_desc">Customize the colors of the genre fragment</string>
+    <string name="col_song_frag">Song Fragment Colors</string>
+    <string name="col_song_frag_desc">Customize the colors of the song fragment</string>
+    <string name="col_playlist_frag">Playlist Fragment Colors</string>
+    <string name="col_playlist_frag_desc">Customize the colors of the playlist fragment</string>
+    <string name="colors">Colors</string>
+
+    <string name="col_album_frag_toolbar">Album Fragment Toolbar Color</string>
+    <string name="col_album_frag_card">Album Fragment Card Color</string>
+    <string name="col_artist_frag_toolbar">Artist Fragment Toolbar Color</string>
+    <string name="col_artist_frag_card">Artist Fragment Card Color</string>
+    <string name="col_genre_frag_toolbar">Genre Fragment Toolbar Color</string>
+    <string name="col_genre_frag_card">Genre Fragment Card Color</string>
+    <string name="col_song_frag_toolbar">Song Fragment Toolbar Color</string>
+    <string name="col_song_frag_card">Song Fragment Card Color</string>
+    <string name="col_playlist_frag_toolbar">Playlist Fragment Toolbar Color</string>
+    <string name="col_playlist_frag_card">Playlist Fragment Card Color</string>
+
+    <string name="bgc_album_frag">Album Fragment Background</string>
+    <string name="bgc_album_frag_desc">Set the background color of the album fragment</string>
+    <string name="bgc_genre_frag">Genre Fragment Background</string>
+    <string name="bgc_genre_frag_desc">Set the background color of the genre fragment</string>
+    <string name="bgc_artist_frag">Artist Fragment Background</string>
+    <string name="bgc_artist_frag_desc">Set the background color of the artist fragment</string>
+    <string name="bgc_song_frag">Song Fragment Background</string>
+    <string name="bgc_song_frag_desc">Set the background color of the song fragment</string>
+    <string name="bgc_playlist_frag">Playlist Fragment Background</string>
+    <string name="bgc_playlist_frag_desc">Set the background color of the playlist fragment</string>
+
+    <!-- Basic Dialog Stuff -->
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <!-- End ..............-->
+
+    <string name="dialog_add_duplicate_to_playlist">Song already exists in playlist</string>
+    <string name="dialog_add_duplicate_to_playlist_desc">Do you want to add the duplicated song?</string>
+
+    <!-- Set Color Dialog Titles -->
+    <!-- TODO: Finish these -->
+    <string name="cd_album_frag_bg">Set Album View Background</string>
+    <string name="cd_genre_frag_bg">Set Genre View Background</string>
+    <string name="cd_artist_frag_bg">Set Artist View Background</string>
+    <string name="cd_song_frag_bg">Set Song View Background</string>
+    <string name="cd_playlist_frag_bg">Set Playlist View Background</string>
+    <string name="cd_toolbar_color">Set Toolbar Color</string>
+    <string name="cd_spp_color">Set Song Panel Color</string>
+    <string name="cd_spb_color">Set Song Bar Color</string>
+    <string name="cd_btnplay_color">Set Play Button Color</string>
+    <string name="cd_btnpause_color">Set Pause Button Color</string>
+    <string name="cd_btnprev_color">Set Previous Button Color</string>
+    <string name="cd_btnnext_color">Set Next Button Color</string>
+    <!-- End Color Dialog Stuff -->
+
+    <!-- Start SPP -->
+    <string name="si_col_btnplay">Play Button Color</string>
+    <string name="si_col_btnpause">Pause Button Color</string>
+    <string name="si_col_btnprev">Previous Button Color</string>
+    <string name="si_col_btnnext">Next Button Color</string>
+    <!-- E N D SPP -->
+
+    <!-- Tagging Dialog Stuff -->
+    <string name="tagging">Tagging</string>
+    <string name="enter_tag_name">Enter Tag Name</string>
+    <string name="edit_tag_name">Edit Tag Name</string>
+    <!-- End Tagging Dialog  -->
+
+    <string name="now_playing">Now Playing</string>
+
+
+    <color name="primary_material_skyblue">#2196F3</color>
+    <color name="background_material_skyblue">#1E88E5</color>
+    <color name="ripple_skyblue">#42A5F5</color>
+    <color name="primary_material_rubyred">#F44336</color>
+    <color name="background_material_rubyred">#E53935</color>
+    <color name="ripple_rubyred">#E57373</color>
+    <color name="primary_material_emeraldgreen">#4CAF50</color>
+    <color name="background_material_emeraldgreen">#43A047</color>
+    <color name="ripple_emeraldgreen">#81C784</color>
+    <color name="primary_material_royalpurple">#9C27B0</color>
+    <color name="background_material_royalpurple">#8E24AA</color>
+    <color name="ripple_royalpurple">#BA68C8</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#B8B9BA</color>
+    <color name="notification_gray">#292725</color>
+    <color name="background_gray">#E3E3E3</color>
+    <color name="primary_text_color">#605E5D</color>
+    <color name="secondary_text_color">#9C9797</color>
+    <color name="divider_light_gray">#f6f6f6</color>
+
+</resources>
