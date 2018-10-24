@@ -12,8 +12,8 @@ Other features:
 - Chromecast support
 
 Screenshots:
-![Screenshot 1](https://i.imgur.com/zO3Aeam.png =250x)
-![Screenshot 2](https://i.imgur.com/ecT1H81.png =250x)
-![Screenshot 3](https://i.imgur.com/dyfwB0i.png =250x)
-![Screenshot 4](https://i.imgur.com/wXkOOnZ.png =250x)
-![Screenshot 5](https://i.imgur.com/QQb4Djv.png =250x)
+<img src="https://i.imgur.com/zO3Aeam.png" alt="Screenshot 1" width="200"/>
+<img src="https://i.imgur.com/ecT1H81.pgg" alt="Screenshot 2" width="200"/>
+<img src="https://i.imgur.com/dyfwB0i.png" alt="Screenshot 3" width="200"/>
+<img src="https://i.imgur.com/wXkOOnZ.png" alt="Screenshot 4" width="200"/>
+<img src="https://i.imgur.com/QQb4Djv.png" alt="Screenshot 5" width="200"/>
