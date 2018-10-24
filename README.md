@@ -2,3 +2,18 @@
 Music Player for Android
 
 Snow Music is a music player for Android. This was a project of mine that I worked on in 2015-2016. I do not recommend using this code as any type of reference.
+
+The idea behind Snow Music is a fully customizable and themeable music player. With a wide variety of themeable views and widgets, almost every aspect of the app can be themed.
+
+Other features:
+- Custom Tagging
+- Auto-download Album Art
+- Meta-tag editing
+- Chromecast support
+
+Screenshots:
+![Screenshot 1](https://imgur.com/zO3Aeam)
+![Screenshot 2](https://imgur.com/ecT1H81)
+![Screenshot 3](https://imgur.com/dyfwB0i)
+![Screenshot 4](https://imgur.com/wXkOOnZ)
+![Screenshot 5](https://imgur.com/QQb4Djv)
