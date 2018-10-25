@@ -109,7 +109,7 @@ public class AlbumArtDownloader {
             StringBuilder stringBuilder = new StringBuilder("http://ws.audioscrobbler.com/2.0/");
             stringBuilder.append("?method=album.getinfo");
             stringBuilder.append("&api_key=");
-            stringBuilder.append("3fb9cbfa4edccd88fa1d21ff7a784055");
+            stringBuilder.append("");
             stringBuilder.append("&artist=" + URLEncoder.encode(artist, "UTF-8"));
             stringBuilder.append("&album=" + URLEncoder.encode(title, "UTF-8"));
             String url = stringBuilder.toString();
